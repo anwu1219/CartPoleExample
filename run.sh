@@ -18,7 +18,7 @@ mkdir dump/
 echo "The network takes in a state and outputs two scores, one for applying control clockwise, one for applying control counter-clockwise"
 echo ""
 echo "Partitioning input regions and identifying invariant sub-regions S where the transition system maps S to itself..."
-./Marabou/src/engine/marabou.elf ./networks/cartpole_2layer_8node_classifier.nnet ./networks/empty_property.txt --dnc --num-workers=1 --tree-depth=5 --initial-divides=0 --num-online-divides=2
+./Marabou/src/engine/marabou.elf ./networks/cartpole_2layer_8node_classifier.nnet ./networks/empty_property.txt --dnc --num-workers=1 --tree-depth=5 --initial-divides=0 --num-online-divides=2 > log.txt
 
 echo "done!"
 echo ""
