@@ -15,10 +15,10 @@ This calls Marabou and check whether this is a true invariant.
 More concretely, suppose the outputs of the network are y1 and y2, given an input region L <= X <= U, for each input dimension x,
 we check whether the following queries are unsatisfiable:
 
-   y1 >= y2 and x >= U
-   y1 <= y2 and x >= U
-   y1 >= y2 and x <= L
-   y1 <= y2 and x <= L
+   1. y1 >= y2 and x >= U
+   2. y1 <= y2 and x >= U
+   3. y1 >= y2 and x <= L
+   4. y1 <= y2 and x <= L
 
 In total, this amounts to 16 satisfiable checks since the network has 4 inputs.
 If each query is unsatisiable (the solver prints out "DnCManager::solve UNSAT query"), the region is a real invariant.
